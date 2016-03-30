@@ -42,7 +42,7 @@ if h then
             local h3 = http.get("https://raw.github.com/Gonow32/Cube-Get/master/"..tArgs[2].."/"..info.sRunFile)
             local code = h3.readAll()
             local nArgs = {}
-            if tArgs >= 3 then
+            if #tArgs >= 3 then
               local count = 0
               for i = 3,#tArgs do
                 count = count + 1
