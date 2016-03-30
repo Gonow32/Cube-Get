@@ -32,7 +32,7 @@ if t then
         end
         f.close()
         local x,y = term.getCursorPos()
-        print("Downloaded "..v)
+        term.write("Downloaded "..v.." ")
         percentage = percentage + onepercent
         local sp = 1
         local found = false
@@ -47,8 +47,7 @@ if t then
           sp = #tostring(percentage)
         end
         local sper = "["..tostring(percentage):sub(1,sp).."%]"
-        term.setCursorPos(w-#sper, y+1)
-        term.write(sper)
+        print(sper)
       else
         printError("Error downloading "..v)
         return
