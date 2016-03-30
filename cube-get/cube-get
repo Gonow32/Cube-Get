@@ -8,7 +8,7 @@ if #tArgs >= 1 and tArgs[1] == "help" then
   return
 end
 
-if #tArgs < 2 then
+if #tArgs < 2 and tArgs[1] ~= "list" then
   printError("Usage: cube-get <mode> <file>")
   printError("Do 'cube-get help' for more information.")
   return
