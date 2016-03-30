@@ -1,0 +1,7 @@
+{
+  bRunnable = true,
+  sRunFile = "cube-get",
+  tFiles = {
+    "cube-get",
+  },
+}
